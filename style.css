@@ -1,0 +1,540 @@
+
+ @font-face {
+    font-family: 'against';
+    src:url(./fonts/against\ regular.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff6e9;
+  color: #492719;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: 'against';
+}
+
+.section-space {
+  padding: 75px 0;
+}
+
+.navbar {
+  background: #fffaf2;
+  padding: 12px 0;
+  border-bottom: 1px solid #ecd9c3;
+}
+
+.navbar-brand {
+  color: #a9231c;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.navbar-brand img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.navbar-brand span, footer span {
+  color: #f2a13b;
+}
+
+.nav-link {
+  color: #492719;
+  font-weight: 800;
+  margin: 0 9px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #b3221b;
+}
+
+.btn-cart {
+  background: #b3221b;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 800;
+}
+
+.btn-cart:hover {
+  background: #861a15;
+  color: white;
+}
+
+.btn-main {
+  background: #f5a13a;
+  color: #492719;
+  border: 0;
+  border-radius: 30px;
+  padding: 13px 27px;
+  font-weight: 800;
+}
+
+.btn-main:hover {
+  background: #ffc16b;
+  color: #492719;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #bd3025;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+
+.home-hero {
+  background: linear-gradient(115deg, #ffe6c7, #fff5e8);
+  padding: 75px 0;
+  border-bottom: 12px solid #ad241d;
+}
+
+.home-hero h1 {
+  color: #492719;
+  font-size: 58px;
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.home-hero h1 span,
+.menu-hero h1 span,
+.contact-hero h1 span {
+  color: #b3221b;
+}
+
+.home-hero p,
+.contact-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 27px;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.hero-sticker {
+  background: #b3221b;
+  color: white;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 18px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  transform: rotate(-5deg);
+  margin: -15px 0 0 180px;
+}
+
+
+.about-section {
+  background: #f4e2ca;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: #a9231c;
+  font-size: 40px;
+}
+
+.about-box {
+  background: #fffaf2;
+  border-radius: 22px;
+  padding: 35px;
+  border: 1px solid #e8cfb2;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-card {
+  height: 100%;
+  text-align: center;
+  background: #ffedda;
+  border-radius: 22px;
+  padding: 30px 23px;
+  border-bottom: 5px solid #e87532;
+  transition: .3s;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card span {
+  font-size: 43px;
+}
+
+.about-card h3 {
+  color: #a9231c;
+  margin: 13px 0;
+}
+
+.about-card p {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.about-closing {
+  margin-top: 30px;
+  background: #a9231c;
+  color: white;
+  border-radius: 20px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.about-closing img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.about-closing h3 {
+  font-size: 30px;
+}
+
+.about-closing p {
+  margin: 0;
+  color: #ffe3c2;
+}
+
+.menu-hero {
+  background: #a9231c;
+  color: white;
+  padding: 35px 0 48px;
+  border-bottom: 9px solid #f3a13b;
+}
+
+.menu-hero .eyebrow {
+  color: #ffd69e;
+  display: block;
+}
+
+.menu-hero h1 {
+  font-size: 50px;
+}
+
+.menu-hero h1 span {
+  color: #ffc16b;
+}
+
+.menu-hero p {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
+.menu-logo {
+  width: 115px;
+  height: 115px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.product-card.card {
+  display: flex;
+  flex-direction: column;
+  background: #fffaf2;
+  border: 1px solid #ead7c1;
+  border-radius: 22px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px #49271920;
+}
+
+.package {
+  min-height: 300px;
+  max-width: 245px;
+  margin: 0 auto 20px;
+  padding: 17px 15px 20px;
+  border: 3px solid #492719;
+  border-radius: 13px 13px 25px 25px;
+  clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 5px #ffffff25;
+  position: relative;
+}
+
+.package:before {
+  content: '';
+  width: 85%;
+  height: 9px;
+  border-top: 3px dashed #49271980;
+  border-bottom: 1px solid #49271950;
+  position: absolute;
+  top: 8px;
+}
+
+.package-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.package strong {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  margin: 5px 0 7px;
+}
+
+.package-description {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.package h3 {
+  background: #fff0d5;
+  color: #492719;
+  border-radius: 8px;
+  padding: 7px 15px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.package .food {
+  background: #fff5e7;
+  border: 4px solid #ffffffaa;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0 7px;
+  box-shadow: 0 4px 10px #49271930;
+  overflow: hidden;
+}
+
+.package .food img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.package small {
+  background: #fff0d5;
+  color: #492719;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-weight: 800;
+}
+
+.package-red {
+  background: linear-gradient(140deg, #ed5140, #a91e19);
+  color: white;
+}
+
+.package-yellow {
+  background: linear-gradient(140deg, #ffd36c, #e99521);
+  color: #492719;
+}
+
+.package-brown {
+  background: linear-gradient(140deg, #986044, #57301f);
+  color: white;
+}
+
+.package-purple {
+  background: linear-gradient(140deg, #9b5366, #632d42);
+  color: white;
+}
+
+.package-orange {
+  background: linear-gradient(140deg, #ff9a3e, #dc541e);
+  color: white;
+}
+
+.package-dark {
+  background: linear-gradient(140deg, #75472f, #38251d);
+  color: white;
+}
+
+.product-card h2 {
+  color: #492719;
+  font-size: 21px;
+  margin: 8px 0;
+}
+
+.product-card p {
+  color: #806657;
+  min-height: 48px;
+}
+
+.price {
+  display: block;
+  color: #b3221b;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.btn-product {
+  width: 100%;
+  border-radius: 25px;
+  background: #b3221b;
+  color: white;
+  font-weight: 800;
+  padding: 11px;
+}
+
+.btn-product:hover {
+  background: #e87532;
+  color: white;
+}
+
+/* CONTATO */
+.contact-hero {
+  background: linear-gradient(120deg, #a9231c 0%, #c43b28 100%);
+  color: white;
+  padding: 75px 0;
+  min-height: 75vh;
+}
+
+.contact-hero .eyebrow {
+  color: #ffd69e;
+}
+
+.contact-hero h1 {
+  font-size: 55px;
+  line-height: 1.05;
+}
+
+.contact-hero h1 span {
+  color: #ffc16b;
+}
+
+.contact-hero p {
+  color: #ffead4;
+}
+
+.contact-logo {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.contact-box {
+  background: #fffaf2;
+  color: #492719;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px #54150f40;
+}
+
+.contact-box h2 {
+  color: #a9231c;
+  margin-bottom: 22px;
+}
+
+.form-label {
+  font-weight: 800;
+}
+
+.form-control {
+  background: #fff5e8;
+  border: 1px solid #e4c7a8;
+  border-radius: 11px;
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: #b3221b;
+  box-shadow: 0 0 5px #b3221b40;
+}
+
+#respostaContato {
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+
+footer {
+  background: #492719;
+  color: white;
+  padding: 38px 0 15px;
+}
+
+footer h3 {
+  font-size: 25px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.footer-logo {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px;
+  display: inline-block;
+  font-weight: 800;
+}
+
+.footer-links a:hover {
+  color: #ffb24f;
+}
+
+footer hr {
+  border-color: #b99a80;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #d8c4b1;
+}
