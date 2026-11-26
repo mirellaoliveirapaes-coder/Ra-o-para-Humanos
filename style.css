@@ -1,5 +1,7 @@
 
- @font-face {
+ 
+
+@font-face {
     font-family: 'against';
     src:url(./fonts/against\ regular.otf);
 }
@@ -24,11 +26,11 @@ h1, h2, h3, h4, .navbar-brand {
   font-family: 'against';
 }
 
-.section-space {
+.espaco {
   padding: 75px 0;
 }
 
-.navbar {
+.menu-navegacao {
   background: #fffaf2;
   padding: 12px 0;
   border-bottom: 1px solid #ecd9c3;
@@ -64,7 +66,7 @@ h1, h2, h3, h4, .navbar-brand {
   color: #b3221b;
 }
 
-.btn-cart {
+.carrinho {
   background: #b3221b;
   color: white;
   border-radius: 30px;
@@ -72,12 +74,12 @@ h1, h2, h3, h4, .navbar-brand {
   font-weight: 800;
 }
 
-.btn-cart:hover {
+.carrinho:hover {
   background: #861a15;
   color: white;
 }
 
-.btn-main {
+.botao {
   background: #f5a13a;
   color: #492719;
   border: 0;
@@ -86,12 +88,12 @@ h1, h2, h3, h4, .navbar-brand {
   font-weight: 800;
 }
 
-.btn-main:hover {
+.botao:hover {
   background: #ffc16b;
   color: #492719;
 }
 
-.eyebrow {
+.destaque {
   display: inline-block;
   color: #bd3025;
   font-size: 13px;
@@ -101,13 +103,15 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 
-.home-hero {
+/* INÍCIO */
+
+.inicio:has(.cachorro) {
   background: linear-gradient(115deg, #ffe6c7, #fff5e8);
   padding: 75px 0;
   border-bottom: 12px solid #ad241d;
 }
 
-.home-hero h1 {
+.inicio:has(.cachorro) h1 {
   color: #492719;
   font-size: 58px;
   line-height: 1.05;
@@ -115,21 +119,20 @@ h1, h2, h3, h4, .navbar-brand {
   margin-bottom: 22px;
 }
 
-.home-hero h1 span,
-.menu-hero h1 span,
-.contact-hero h1 span {
+.inicio:has(.cachorro) h1 span,
+.inicio:has(.logo-cardapio) h1 span {
   color: #b3221b;
 }
 
-.home-hero p,
-.contact-hero p {
+.inicio:has(.cachorro) p,
+.inicio:has(.logo-contato) p {
   font-size: 18px;
   line-height: 1.8;
   max-width: 520px;
   margin-bottom: 27px;
 }
 
-.hero-logo {
+.cachorro {
   width: 100%;
   max-width: 440px;
   height: auto;
@@ -150,21 +153,23 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 
-.about-section {
+/* SOBRE NÓS */
+
+.sobre {
   background: #f4e2ca;
 }
 
-.section-title {
+.titulo {
   text-align: center;
   margin-bottom: 35px;
 }
 
-.section-title h2 {
+.titulo h2 {
   color: #a9231c;
   font-size: 40px;
 }
 
-.about-box {
+.texto-sobre {
   background: #fffaf2;
   border-radius: 22px;
   padding: 35px;
@@ -173,7 +178,7 @@ h1, h2, h3, h4, .navbar-brand {
   line-height: 1.8;
 }
 
-.about-card {
+.caixa-info {
   height: 100%;
   text-align: center;
   background: #ffedda;
@@ -183,25 +188,25 @@ h1, h2, h3, h4, .navbar-brand {
   transition: .3s;
 }
 
-.about-card:hover {
+.caixa-info:hover {
   transform: translateY(-6px);
 }
 
-.about-card span {
+.caixa-info span {
   font-size: 43px;
 }
 
-.about-card h3 {
+.caixa-info h3 {
   color: #a9231c;
   margin: 13px 0;
 }
 
-.about-card p {
+.caixa-info p {
   line-height: 1.7;
   margin-bottom: 0;
 }
 
-.about-closing {
+.final-sobre {
   margin-top: 30px;
   background: #a9231c;
   color: white;
@@ -214,48 +219,51 @@ h1, h2, h3, h4, .navbar-brand {
   text-align: left;
 }
 
-.about-closing img {
+.final-sobre img {
   width: 125px;
   height: 125px;
   object-fit: contain;
   border-radius: 15px;
 }
 
-.about-closing h3 {
+.final-sobre h3 {
   font-size: 30px;
 }
 
-.about-closing p {
+.final-sobre p {
   margin: 0;
   color: #ffe3c2;
 }
 
-.menu-hero {
+
+/* CARDÁPIO */
+
+.inicio:has(.logo-cardapio) {
   background: #a9231c;
   color: white;
   padding: 35px 0 48px;
   border-bottom: 9px solid #f3a13b;
 }
 
-.menu-hero .eyebrow {
+.inicio:has(.logo-cardapio) .destaque {
   color: #ffd69e;
   display: block;
 }
 
-.menu-hero h1 {
+.inicio:has(.logo-cardapio) h1 {
   font-size: 50px;
 }
 
-.menu-hero h1 span {
+.inicio:has(.logo-cardapio) h1 span {
   color: #ffc16b;
 }
 
-.menu-hero p {
+.inicio:has(.logo-cardapio) p {
   margin: 8px 0 0;
   font-size: 18px;
 }
 
-.menu-logo {
+.logo-cardapio {
   width: 115px;
   height: 115px;
   object-fit: contain;
@@ -263,7 +271,7 @@ h1, h2, h3, h4, .navbar-brand {
   margin-bottom: 10px;
 }
 
-.product-card.card {
+.produto.card {
   display: flex;
   flex-direction: column;
   background: #fffaf2;
@@ -275,12 +283,12 @@ h1, h2, h3, h4, .navbar-brand {
   transition: .3s;
 }
 
-.product-card:hover {
+.produto:hover {
   transform: translateY(-7px);
   box-shadow: 0 12px 25px #49271920;
 }
 
-.package {
+.pacote {
   min-height: 300px;
   max-width: 245px;
   margin: 0 auto 20px;
@@ -296,7 +304,7 @@ h1, h2, h3, h4, .navbar-brand {
   position: relative;
 }
 
-.package:before {
+.pacote:before {
   content: '';
   width: 85%;
   height: 9px;
@@ -306,7 +314,7 @@ h1, h2, h3, h4, .navbar-brand {
   top: 8px;
 }
 
-.package-logo {
+.logo-pacote {
   width: 55px;
   height: 55px;
   object-fit: contain;
@@ -314,7 +322,7 @@ h1, h2, h3, h4, .navbar-brand {
   margin-top: 8px;
 }
 
-.package strong {
+.pacote strong {
   font-family: 'Fredoka', sans-serif;
   font-size: 22px;
   line-height: 1;
@@ -322,12 +330,12 @@ h1, h2, h3, h4, .navbar-brand {
   margin: 5px 0 7px;
 }
 
-.package-description {
+.descricao-pacote {
   font-size: 12px;
   margin-bottom: 8px;
 }
 
-.package h3 {
+.pacote h3 {
   background: #fff0d5;
   color: #492719;
   border-radius: 8px;
@@ -337,7 +345,7 @@ h1, h2, h3, h4, .navbar-brand {
   margin: 0;
 }
 
-.package .food {
+.pacote .comida {
   background: #fff5e7;
   border: 4px solid #ffffffaa;
   border-radius: 50%;
@@ -351,14 +359,14 @@ h1, h2, h3, h4, .navbar-brand {
   overflow: hidden;
 }
 
-.package .food img {
+.pacote .comida img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.package small {
+.pacote small {
   background: #fff0d5;
   color: #492719;
   border-radius: 20px;
@@ -366,55 +374,55 @@ h1, h2, h3, h4, .navbar-brand {
   font-weight: 800;
 }
 
-.package-red {
+.pacote-vermelho {
   background: linear-gradient(140deg, #ed5140, #a91e19);
   color: white;
 }
 
-.package-yellow {
+.pacote-amarelo {
   background: linear-gradient(140deg, #ffd36c, #e99521);
   color: #492719;
 }
 
-.package-brown {
+.pacote-marrom {
   background: linear-gradient(140deg, #986044, #57301f);
   color: white;
 }
 
-.package-purple {
+.pacote-roxo {
   background: linear-gradient(140deg, #9b5366, #632d42);
   color: white;
 }
 
-.package-orange {
+.pacote-laranja {
   background: linear-gradient(140deg, #ff9a3e, #dc541e);
   color: white;
 }
 
-.package-dark {
+.pacote-escuro {
   background: linear-gradient(140deg, #75472f, #38251d);
   color: white;
 }
 
-.product-card h2 {
+.produto h2 {
   color: #492719;
   font-size: 21px;
   margin: 8px 0;
 }
 
-.product-card p {
+.produto p {
   color: #806657;
   min-height: 48px;
 }
 
-.price {
+.preco {
   display: block;
   color: #b3221b;
   font-size: 24px;
   margin: 10px 0;
 }
 
-.btn-product {
+.botao-produto {
   width: 100%;
   border-radius: 25px;
   background: #b3221b;
@@ -423,37 +431,39 @@ h1, h2, h3, h4, .navbar-brand {
   padding: 11px;
 }
 
-.btn-product:hover {
+.botao-produto:hover {
   background: #e87532;
   color: white;
 }
 
+
 /* CONTATO */
-.contact-hero {
+
+.inicio:has(.logo-contato) {
   background: linear-gradient(120deg, #a9231c 0%, #c43b28 100%);
   color: white;
   padding: 75px 0;
   min-height: 75vh;
 }
 
-.contact-hero .eyebrow {
+.inicio:has(.logo-contato) .destaque {
   color: #ffd69e;
 }
 
-.contact-hero h1 {
+.inicio:has(.logo-contato) h1 {
   font-size: 55px;
   line-height: 1.05;
 }
 
-.contact-hero h1 span {
+.inicio:has(.logo-contato) h1 span {
   color: #ffc16b;
 }
 
-.contact-hero p {
+.inicio:has(.logo-contato) p {
   color: #ffead4;
 }
 
-.contact-logo {
+.logo-contato {
   width: 260px;
   max-width: 100%;
   height: auto;
@@ -461,7 +471,7 @@ h1, h2, h3, h4, .navbar-brand {
   border-radius: 20px;
 }
 
-.contact-box {
+.caixa-contato {
   background: #fffaf2;
   color: #492719;
   padding: 35px;
@@ -469,7 +479,7 @@ h1, h2, h3, h4, .navbar-brand {
   box-shadow: 0 15px 35px #54150f40;
 }
 
-.contact-box h2 {
+.caixa-contato h2 {
   color: #a9231c;
   margin-bottom: 22px;
 }
@@ -496,6 +506,8 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 
+/* RODAPÉ */
+
 footer {
   background: #492719;
   color: white;
@@ -510,14 +522,14 @@ footer p {
   margin-bottom: 8px;
 }
 
-.footer-logo {
+.logo-rodape {
   width: 85px;
   height: 85px;
   object-fit: contain;
   border-radius: 50%;
 }
 
-.footer-links a {
+.links-rodape a {
   color: white;
   text-decoration: none;
   margin: 5px 10px;
@@ -525,7 +537,7 @@ footer p {
   font-weight: 800;
 }
 
-.footer-links a:hover {
+.links-rodape a:hover {
   color: #ffb24f;
 }
 
@@ -533,7 +545,7 @@ footer hr {
   border-color: #b99a80;
 }
 
-.copyright {
+.direitos {
   text-align: center;
   font-size: 13px;
   color: #d8c4b1;

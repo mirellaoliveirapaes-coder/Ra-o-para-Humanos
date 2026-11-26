@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +15,7 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="menu-navegacao navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logo2.png" alt="Logo Auaufood">
@@ -31,134 +33,135 @@
           <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
         </ul>
 
-        <button class="btn btn-cart ms-lg-3" onclick="mostrarCarrinho()">🛒 Carrinho (<span class="quantidade">0</span>)</button>
+        <button class="btn carrinho ms-lg-3" onclick="mostrarCarrinho()">🛒 Carrinho (<span class="quantidade">0</span>)</button>
       </div>
     </div>
   </nav>
 </header>
 
 <main>
-  <section class="menu-hero">
+  <section class="inicio">
     <div class="container text-center">
-      <img src="img/logo2.png" alt="Mascote Auaufood" class="menu-logo">
-      <span class="eyebrow">🐾 ESCOLHA SEU SABOR PREFERIDO!</span>
+      <img src="img/logo2.png" alt="Mascote Auaufood" class="logo-cardapio">
+      <span class="destaque">🐾 ESCOLHA SEU SABOR PREFERIDO!</span>
       <h1>Nosso <span>Cardápio</span></h1>
       <p>Variedade de Rações deliciosas !</p>
     </div>
   </section>
 
-  <section class="section-space">
+  <section class="espaco">
     <div class="container">
       <div class="row g-4">
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-red">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-vermelho">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Carbonara</h3>
-              <div class="food"><img src="img/Carbonara.jpg" alt="Massa carbonara"></div>
+              <div class="comida"><img src="img/Carbonara.jpg" alt="Massa carbonara"></div>
               <small>Sabor que conquista!</small>
             </div>
             <h2>Ração sabor Carbonara</h2>
             <p>Todo o sabor da massa italiana sem complicação!</p>
-            <strong class="price">R$ 100,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Carbonara', 24.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 100,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Carbonara', 24.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-yellow">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-amarelo">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Parqueca</h3>
-              <div class="food"><img src="img/Panqeca.webp" alt="Panquecas"></div>
+              <div class="comida"><img src="img/Panqeca.webp" alt="Panquecas"></div>
               <small>Tradição em cada garfada!</small>
             </div>
             <h2>Ração sabor Parqueca</h2>
             <p>O clássico brasileiro em uma versão prática!</p>
-            <strong class="price">R$ 80,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Parqueca', 23.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 80,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Parqueca', 23.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-brown">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-marrom">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Strogonoff</h3>
-              <div class="food"><img src="img/strogonoff.jpg" alt="Prato de strogonoff"></div>
+              <div class="comida"><img src="img/strogonoff.jpg" alt="Prato de strogonoff"></div>
               <small>Clássico e delicioso!</small>
             </div>
             <h2>Ração sabor Strogonoff</h2>
             <p>Um prato clássico para matar sua fome!</p>
-            <strong class="price">R$ 50,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Strogonoff', 26.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 50,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Strogonoff', 26.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-purple">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-roxo">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Lasanha</h3>
-              <div class="food"><img src="img/lasanha.webp" alt="Fatia de lasanha"></div>
+              <div class="comida"><img src="img/lasanha.webp" alt="Fatia de lasanha"></div>
               <small>Camadas de felicidade!</small>
             </div>
             <h2>Ração sabor Lasanha</h2>
             <p>Camadas de sabor para facilitar seu dia!</p>
-            <strong class="price">R$ 85,90</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Lasanha', 27.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 85,90</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Lasanha', 27.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-orange">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-laranja">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Pizza</h3>
-              <div class="food"><img src="img/pizza.webp" alt="Pizza"></div>
+              <div class="comida"><img src="img/pizza.webp" alt="Pizza"></div>
               <small>O sabor da alegria!</small>
             </div>
             <h2>Ração sabor Pizza</h2>
             <p>O sabor da pizza sem precisar sair de casa!</p>
-            <strong class="price">R$ 90,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Pizza', 25.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 90,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Pizza', 25.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
         <div class="col-sm-6 col-lg-4">
-          <article class="product-card card h-100">
-            <div class="package package-dark">
-              <img src="img/logo2.png" alt="Logo Auaufood" class="package-logo">
+          <article class="produto card h-100">
+            <div class="pacote pacote-escuro">
+              <img src="img/logo2.png" alt="Logo Auaufood" class="logo-pacote">
               <strong>Auaufood</strong>
-              <em class="package-description">Ração para humanos</em>
+              <em class="descricao-pacote">Ração para humanos</em>
               <h3>Feijoada</h3>
-              <div class="food"><img src="img/feijoada.jpg" alt="Prato de comida brasileira"></div>
+              <div class="comida"><img src="img/feijoada.jpg" alt="Prato de comida brasileira"></div>
               <small>Sabor brasileiro!</small>
             </div>
             <h2>Ração sabor Feijoada</h2>
             <p>Tradição e praticidade no mesmo pacote!</p>
-            <strong class="price">R$ 30,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Feijoada', 26.90)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 30,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Feijoada', 26.90)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
+
         <div class="col-12 col-lg-8 mx-auto mt-5">
-          <article class="product-card card h-100 text-center p-4">
+          <article class="produto card h-100 text-center p-4">
             <img src="img/promocao.webp" alt="Super Promoção - Compre 1 e Leve Todos" class="img-fluid rounded mb-3 w-100">
             <h2>Combo Super Promoção • Compre 1 e Leve Todos!</h2>
             <p>Leve todos os 6 sabores (Carbonara, Parqueca, Strogonoff, Lasanha, Pizza e Feijoada) pelo preço de apenas 1!</p>
-            <strong class="price">R$ 10,00</strong>
-            <button class="btn btn-product" onclick="adicionarCarrinho('Combo Super Promoção (Compre 1 e Leve Todos)', 100.00)">🛒 Adicionar ao carrinho</button>
+            <strong class="preco">R$ 10,00</strong>
+            <button class="btn botao-produto" onclick="adicionarCarrinho('Combo Super Promoção (Compre 1 e Leve Todos)', 100.00)">🛒 Adicionar ao carrinho</button>
           </article>
         </div>
 
@@ -169,16 +172,16 @@
 
 <footer>
   <div class="container text-center">
-    <img src="img/logo2.png" alt="Mascote Auaufood" class="footer-logo">
+    <img src="img/logo2.png" alt="Mascote Auaufood" class="logo-rodape">
     <h3><span>Auaufood</span></h3>
     <p>Porque cozinhar é opcional!</p>
-    <div class="footer-links">
+    <div class="links-rodape">
       <a href="index.html">Sobre nós</a>
       <a href="cardapio.html">Cardápio</a>
       <a href="contato.html">Contato</a>
     </div>
     <hr>
-    <p class="copyright">© 2026 </p>
+    <p class="direitos">© 2026 </p>
   </div>
 </footer>
 
